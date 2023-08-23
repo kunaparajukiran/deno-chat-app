@@ -1,6 +1,6 @@
 const myUsername = prompt("Please enter your name") || "Anonymous";
 const socket = new WebSocket(
-  `ws://localhost:8080/start_web_socket?username=${myUsername}`
+  `ws://pure-hawk-80.deno.dev/start_web_socket?username=${myUsername}`
 );
 
 socket.onmessage = (m) => {
